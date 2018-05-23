@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     session[:name] = params[:name]
 
     if session[:name]
-      render '/secrets'
+      render '/secret'
     else
       redirect_to '/'
     end
