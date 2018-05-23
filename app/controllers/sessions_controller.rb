@@ -22,6 +22,7 @@ class SessionsController < ApplicationController
 
   def current_user
     session[:name]
+    redirect_to '/login'
   end
 
 end
