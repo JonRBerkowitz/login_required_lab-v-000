@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
 
   def create
     session[:name] = params[:name]
+    render '/secrets'
     redirect_to '/'
   end
 
@@ -14,7 +15,7 @@ class SessionsController < ApplicationController
 
   private
 
-  def current_user 
+  def current_user
     session[:name]
   end
 
