@@ -16,13 +16,14 @@ class SessionsController < ApplicationController
 
   def destroy
     session.delete :name
+    redirect_to '/login'
+
   end
 
   private
 
   def current_user
     session[:name]
-    redirect_to '/login'
   end
 
 end
