@@ -12,5 +12,6 @@ class SecretsController < ApplicationController
   def required_login
     unless session[:username]
       redirect_to '/login'
+    end
   end
 end
