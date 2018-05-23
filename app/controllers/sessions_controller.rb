@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     if session[:name] && session[:name] != ""
       render 'secrets/show'
     else
-      redirect_to '/'
+      redirect_to '/login'
     end
   end
 
