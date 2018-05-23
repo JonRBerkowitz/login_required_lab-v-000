@@ -6,7 +6,7 @@ class SecretsController < ApplicationController
     if session[:username]
       render 'show'
     else
-
+      redirect_to 'sessions/login'
     end
   end
 end
