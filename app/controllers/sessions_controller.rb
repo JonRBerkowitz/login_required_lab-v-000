@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    session[:name] = params[:nname]
+    session[:name] = params[:name]
     redirect_to '/'
   end
 
