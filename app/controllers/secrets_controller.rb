@@ -1,6 +1,6 @@
 class SecretsController < ApplicationController
   before_action :required_login
-  
+
   def index
   end
 
